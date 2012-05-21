@@ -1,3 +1,9 @@
+// # BatBelt #
+//
+// ![logo](http://static.embed.ly/batbelt/logo.gif "BatBelt")
+//
+// Helps prevent an untimely death.
+
 /*
  * Copyright (c) 2012 Bob Corsaro
  *
@@ -19,12 +25,6 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  */
-
-// # BatBelt #
-//
-// ![logo](http://static.embed.ly/batbelt/logo.gif "BatBelt")
-//
-// Helps prevent an untimely death.
 
 var H = require('hashish')
 
