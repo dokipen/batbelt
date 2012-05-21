@@ -25,7 +25,58 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
             "slug": "batbelt",
             "isFileHeader": true
           },
-          "depth": 1
+          "depth": 1,
+          "children": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "flatten",
+                "slug": "flatten"
+              },
+              "depth": 2
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "listify",
+                "slug": "listify"
+              },
+              "depth": 2
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "times",
+                "slug": "times"
+              },
+              "depth": 2
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "round",
+                "slug": "round"
+              },
+              "depth": 2
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "NOOP",
+                "slug": "noop"
+              },
+              "depth": 2
+            }, {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "merge",
+                "slug": "merge"
+              },
+              "depth": 2
+            }
+          ]
         },
         "title": "BatBelt"
       },
@@ -34,51 +85,51 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         {
           "type": "heading",
           "data": {
-            "level": 1,
+            "level": 2,
             "title": "flatten",
             "slug": "flatten"
           },
-          "depth": 1
+          "depth": 2
         }, {
           "type": "heading",
           "data": {
-            "level": 1,
+            "level": 2,
             "title": "listify",
             "slug": "listify"
           },
-          "depth": 1
+          "depth": 2
         }, {
           "type": "heading",
           "data": {
-            "level": 1,
+            "level": 2,
             "title": "times",
             "slug": "times"
           },
-          "depth": 1
+          "depth": 2
         }, {
           "type": "heading",
           "data": {
-            "level": 1,
+            "level": 2,
             "title": "round",
             "slug": "round"
           },
-          "depth": 1
+          "depth": 2
         }, {
           "type": "heading",
           "data": {
-            "level": 1,
+            "level": 2,
             "title": "NOOP",
             "slug": "noop"
           },
-          "depth": 1
+          "depth": 2
         }, {
           "type": "heading",
           "data": {
-            "level": 1,
+            "level": 2,
             "title": "merge",
             "slug": "merge"
           },
-          "depth": 1
+          "depth": 2
         }
       ]
     }

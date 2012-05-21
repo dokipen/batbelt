@@ -2,36 +2,63 @@
 
 <p><img src="http://static.embed.ly/batbelt/logo.gif" alt="logo" title="BatBelt" /></p>
 
-<p>Helps prefent an untimely death.</p></div></div><div class="code"><div class="wrapper"><span class="kd">var</span> <span class="nx">H</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;hashish&#39;</span><span class="p">)</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><h1 id="flatten">flatten</h1>
+<p>Helps prevent an untimely death.</p></div></div><div class="code"><div class="wrapper"><span class="kd">var</span> <span class="nx">H</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;hashish&#39;</span><span class="p">)</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><hr />
 
-<p>flatten an array.</p>
+<h2 id="flatten">flatten</h2>
 
-<p>ex. flatten([[1,2],[3],4,5]) -> [1,2,3,4,5]</p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">flatten</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+<p>Flatten an array.</p>
+
+<p><em>ex</em> <code>flatten([[1,2],[3],4,5]) -&gt; [1,2,3,4,5]</code></p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">flatten</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[],</span> <span class="nx">self</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">;</span>
   <span class="nx">array</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
     <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">push</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span>
       <span class="nx">result</span><span class="p">,</span>
       <span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="o">?</span> <span class="nx">self</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="o">:</span> <span class="p">[</span><span class="nx">item</span><span class="p">]</span> <span class="p">)</span> <span class="p">}</span> <span class="p">)</span>
-  <span class="k">return</span> <span class="nx">result</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><h1 id="listify">listify</h1>
+  <span class="k">return</span> <span class="nx">result</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><hr />
 
-<p>If it's not an Array, cast it to one</p>
+<h2 id="listify">listify</h2>
 
-<p>ex. listify("bob") -> ["bob"]
-    listify(["bob"]) -> ["bob"]</p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">listify</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+<p>If it's not an Array, cast it to one.</p>
+
+<p><em>ex</em> <code>listify("bob") -&gt; ["bob"]</code>
+     <code>listify(["bob"]) -&gt; ["bob"]</code></p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">listify</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">obj</span><span class="p">))</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">[</span><span class="nx">obj</span><span class="p">]</span> <span class="p">}</span>
   <span class="k">else</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">obj</span> <span class="p">}</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><h1 id="times">times</h1>
+    <span class="k">return</span> <span class="nx">obj</span> <span class="p">}</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><hr />
 
-<p>Make an Array of str</p>
+<h2 id="times">times</h2>
 
-<p>ex. times('?', 4) -> ['?', '?', '?', '?']</p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">times</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">n</span><span class="o">+</span><span class="mi">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;?&#39;</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\?/g</span><span class="p">,</span> <span class="nx">str</span><span class="p">)</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><h1 id="round">round</h1>
+<p>Make an Array of str. Your str cannot contain "$%#$".</p>
 
-<p>Round down to arbitrary increment</p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">round</span><span class="p">(</span><span class="nx">number</span><span class="p">,</span> <span class="nx">increment</span><span class="p">)</span> <span class="p">{</span>
+<p><em>ex</em> <code>times('?', 4) -&gt; ['?', '?', '?', '?']</code></p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">times</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">n</span><span class="o">+</span><span class="mi">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;?&#39;</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;$%#$&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\?/g</span><span class="p">,</span> <span class="nx">str</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;$%#$&#39;</span><span class="p">)</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><hr />
+
+<h2 id="round">round</h2>
+
+<p>Round down to arbitrary increment.</p>
+
+<p><em>ex</em> <code>round(453, 10) -&gt; 450</code></p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">round</span><span class="p">(</span><span class="nx">number</span><span class="p">,</span> <span class="nx">increment</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">number</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span>
   <span class="nx">increment</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">increment</span><span class="p">)</span>
-  <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">number</span> <span class="o">-</span> <span class="nx">number</span> <span class="o">%</span> <span class="nx">increment</span><span class="p">)</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><h1 id="noop">NOOP</h1></div></div></div><div class="segment"><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">NOOP</span><span class="p">()</span> <span class="p">{}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><h1 id="merge">merge</h1>
+  <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">number</span> <span class="o">-</span> <span class="nx">number</span> <span class="o">%</span> <span class="nx">increment</span><span class="p">)</span> <span class="p">}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><hr />
 
-<p>Merge two objects. The second can be null.</p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="nx">H</span><span class="p">(</span><span class="nx">first</span><span class="p">).</span><span class="nx">update</span><span class="p">(</span><span class="nx">second</span><span class="o">||</span><span class="p">{}).</span><span class="nx">end</span> <span class="p">}</span></div></div></div></div></body></html>
+<h2 id="noop">NOOP</h2></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">NOOP</span><span class="p">()</span> <span class="p">{}</span></div></div></div><div class="segment"><div class="comments"><div class="wrapper"><hr />
+
+<h2 id="merge">merge</h2>
+
+<p>Merge two objects. The second can be null.</p>
+
+<p><em>ex</em> <code>merge( {first: "default", second: "default"}
+          , {second: "set", third: "set"}) -&gt;
+     {first: "default", second: "set", third: "set"}</code></p></div></div><div class="code"><div class="wrapper"><span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">H</span><span class="p">(</span><span class="nx">first</span><span class="p">).</span><span class="nx">update</span><span class="p">(</span><span class="nx">second</span><span class="o">||</span><span class="p">{}).</span><span class="nx">end</span> <span class="p">}</span>
+
+
+<span class="nx">exports</span> <span class="o">=</span> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span>
+  <span class="p">{</span> <span class="nx">flatten</span><span class="o">:</span> <span class="nx">flatten</span>
+  <span class="p">,</span> <span class="nx">listify</span><span class="o">:</span> <span class="nx">listify</span>
+  <span class="p">,</span> <span class="nx">times</span><span class="o">:</span> <span class="nx">times</span>
+  <span class="p">,</span> <span class="nx">round</span><span class="o">:</span> <span class="nx">round</span>
+  <span class="p">,</span> <span class="nx">NOOP</span><span class="o">:</span> <span class="nx">NOOP</span>
+  <span class="p">,</span> <span class="nx">merge</span><span class="o">:</span> <span class="nx">merge</span> <span class="p">}</span></div></div></div></div></body></html>
