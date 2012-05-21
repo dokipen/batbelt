@@ -17,9 +17,12 @@
 , "dependencies":
   { "hashish": ""
   , "groc": "" }
+, "devDependencies":
+  {"mocha": "0.7.x", "should": "0.4.x" }
 , "engines": { "node" : ">= 0.4.0", "npm": ">= 1.0.105" }
 , "main": "./index.js"
 , "scripts":
   { "doc": "node_modules/.bin/groc index.js"
+  , "test": "mocha test.js"
   , "publish-doc": "node_modules/.bin/groc --github index.js" }
 }
