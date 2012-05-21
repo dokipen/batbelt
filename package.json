@@ -3,6 +3,7 @@
 , "description": "General purpose utilities to help prevent an untimely death."
 , "homepage": "https://github.com/dokipen/batbelt"
 , "keywords": []
+, "license": "MIT"
 , "author":
   { "name": "Bob Corsaro"
   , "email": "rcorsaro@gmail.com"
