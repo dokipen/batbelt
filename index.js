@@ -10,7 +10,7 @@ var H = require('hashish')
 // ****
 // ## flatten ##
 //
-// flatten an array.
+// Flatten an array.
 //
 // _ex_ `flatten([[1,2],[3],4,5]) -> [1,2,3,4,5]`
 
@@ -26,7 +26,7 @@ function flatten(array) {
 // ****
 // ## listify ##
 //
-// If it's not an Array, cast it to one
+// If it's not an Array, cast it to one.
 //
 // _ex_ `listify("bob") -> ["bob"]`
 //      `listify(["bob"]) -> ["bob"]`
@@ -41,18 +41,18 @@ function listify(obj) {
 // ****
 // ## times ##
 //
-// Make an Array of str
+// Make an Array of str. Your str cannot contain "$%#$".
 //
 // _ex_ `times('?', 4) -> ['?', '?', '?', '?']`
 
 function times(str, n) {
-  return Array(n+1).join('?').split('').replace(/\?/g, str) }
+  return Array(n+1).join('?').split('').join('$%#$').replace(/\?/g, str).split('$%#$') }
 
 
 // ****
 // ## round ##
 //
-// Round down to arbitrary increment
+// Round down to arbitrary increment.
 //
 // _ex_ `round(453, 10) -> 450`
 
