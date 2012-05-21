@@ -1,0 +1,25 @@
+{ "name": "batbelt"
+, "version": "0.0.1"
+, "description": "General purpose utilities to help prevent an untimely death."
+, "homepage": "https://github.com/dokipen/batbelt"
+, "keywords": []
+, "author":
+  { "name": "Bob Corsaro"
+  , "email": "rcorsaro@gmail.com"
+  , "url": "http://www.google.com/profiles/rcorsaro"
+  }
+, "repository":
+  { "type": "git"
+  , "url": "git://github.com/embedly/batbelt"
+  }
+, "bugs": { "url": "http://github.com/embedly/batbelt/issues/" }
+, "directories": { "lib": "./lib" }
+, "dependencies":
+  { "hashish": ""
+  , "groc": "" }
+, "engines": { "node" : ">= 0.4.0", "npm": ">= 1.0.105" }
+, "main": "./index.js"
+, "scripts":
+  { "doc": "node_modules/.bin/groc index.js"
+  , "publish-doc": "node_modules/.bin/groc --github index.js" }
+}
