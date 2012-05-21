@@ -17,13 +17,16 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         "sourcePath": "/home/doki_pen/src/batbelt/index.js",
         "projectPath": "index.js",
         "targetPath": "index",
-        "firstHeader": {
+        "title": "index"
+      },
+      "depth": 1,
+      "outline": [
+        {
           "type": "heading",
           "data": {
             "level": 1,
             "title": "BatBelt",
-            "slug": "batbelt",
-            "isFileHeader": true
+            "slug": "batbelt"
           },
           "depth": 1,
           "children": [
@@ -77,59 +80,6 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "depth": 2
             }
           ]
-        },
-        "title": "BatBelt"
-      },
-      "depth": 1,
-      "outline": [
-        {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "flatten",
-            "slug": "flatten"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "listify",
-            "slug": "listify"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "times",
-            "slug": "times"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "round",
-            "slug": "round"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "NOOP",
-            "slug": "noop"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "merge",
-            "slug": "merge"
-          },
-          "depth": 2
         }
       ]
     }
