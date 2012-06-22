@@ -16,10 +16,9 @@
 , "bugs": { "url": "http://github.com/embedly/batbelt/issues/" }
 , "directories": { "lib": "./lib" }
 , "dependencies":
-  { "hashish": ""
-  , "groc": "" }
+  { "hashish": "" }
 , "devDependencies":
-  {"mocha": "0.7.x", "should": "0.4.x" }
+  {"mocha": "0.7.x", "should": "0.4.x", "groc": "" }
 , "engines": { "node" : ">= 0.4.0", "npm": ">= 1.0.105" }
 , "main": "./index.js"
 , "scripts":

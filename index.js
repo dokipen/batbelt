@@ -3,6 +3,8 @@
 // ![logo](http://static.embed.ly/batbelt/logo.gif "BatBelt")
 //
 // Helps prevent an untimely death.
+//
+//   $ npm install batbelt
 
 /*
  * Copyright (c) 2012 Bob Corsaro
