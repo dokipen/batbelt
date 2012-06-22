@@ -1,28 +1,38 @@
-{ "name": "batbelt"
-, "version": "0.0.1"
-, "description": "General purpose utilities to help prevent an untimely death."
-, "homepage": "https://github.com/dokipen/batbelt"
-, "keywords": []
-, "license": "MIT"
-, "author":
-  { "name": "Bob Corsaro"
-  , "email": "rcorsaro@gmail.com"
-  , "url": "http://www.google.com/profiles/rcorsaro"
-  }
-, "repository":
-  { "type": "git"
-  , "url": "git://github.com/embedly/batbelt"
-  }
-, "bugs": { "url": "http://github.com/embedly/batbelt/issues/" }
-, "directories": { "lib": "./lib" }
-, "dependencies":
-  { "hashish": "" }
-, "devDependencies":
-  {"mocha": "0.7.x", "should": "0.4.x", "groc": "" }
-, "engines": { "node" : ">= 0.4.0", "npm": ">= 1.0.105" }
-, "main": "./index.js"
-, "scripts":
-  { "doc": "node_modules/.bin/groc index.js"
-  , "test": "mocha test.js"
-  , "publish-doc": "node_modules/.bin/groc --github index.js" }
+{
+  "name": "batbelt",
+  "version": "0.0.2",
+  "description": "General purpose utilities to help prevent an untimely death.",
+  "homepage": "https://github.com/dokipen/batbelt",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Bob Corsaro <rcorsaro@gmail.com> (http://www.google.com/profiles/rcorsaro)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/embedly/batbelt.git"
+  },
+  "bugs": {
+    "url": "http://github.com/embedly/batbelt/issues/"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "hashish": ""
+  },
+  "devDependencies": {
+    "mocha": "0.7.x",
+    "should": "0.4.x",
+    "groc": ""
+  },
+  "engines": {
+    "node": ">= 0.4.0",
+    "npm": ">= 1.0.105"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "doc": "node_modules/.bin/groc index.js",
+    "test": "mocha test.js",
+    "publish-doc": "node_modules/.bin/groc --github index.js"
+  },
+  "optionalDependencies": {}
 }
