@@ -4,7 +4,7 @@
 //
 // Helps prevent an untimely death.
 //
-//   $ npm install batbelt
+//   `$ npm install batbelt`
 
 /*
  * Copyright (c) 2012 Bob Corsaro
