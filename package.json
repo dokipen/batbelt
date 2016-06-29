@@ -17,11 +17,12 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "lodash": ""
+    "lodash": "",
+    "keystone": ""
   },
   "devDependencies": {
-    "mocha": "0.7.x",
-    "should": "0.4.x",
+    "mocha": "",
+    "should": "",
     "groc": ""
   },
   "engines": {
