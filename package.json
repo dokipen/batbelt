@@ -17,8 +17,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "lodash": "",
-    "keystone": ""
+    "lodash": ""
   },
   "devDependencies": {
     "mocha": "",
