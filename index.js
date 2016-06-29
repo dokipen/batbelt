@@ -28,7 +28,7 @@
  * IN THE SOFTWARE.
  */
 
-var H = require('hashish')
+var _ = require('lodash')
 
 
 // ****
@@ -102,7 +102,7 @@ function NOOP() {}
 //      {first: "default", second: "set", third: "set"}`
 
 function merge(first, second) {
-  return H(first).update(second||{}).end }
+  return _.merge(first, second) }
 
 
 exports = module.exports =
